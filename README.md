@@ -1,4 +1,4 @@
-nodebb-theme-vanilla
-====================
+nodebb-theme-openmooc
+=====================
 
-Vanilla theme for NodeBB based on Bootstrap. Perfect for starting your own NodeBB themes!
+OpenMOOC theme for NodeBB based on vanilla-theme.
