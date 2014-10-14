@@ -1,0 +1,46 @@
+{
+  "name": "nodebb-theme-vanilla",
+  "version": "0.1.9",
+  "description": "Vanilla theme for NodeBB",
+  "main": "theme.less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NodeBB/nodebb-theme-vanilla"
+  },
+  "keywords": [
+    "nodebb",
+    "theme",
+    "themes",
+    "bootstrap",
+    "vanilla"
+  ],
+  "contributors": [
+    {
+      "name": "Andrew Rodrigues",
+      "email": "andrew@designcreateplay.com",
+      "url": "https://github.com/psychobunny"
+    },
+    {
+      "name": "Julian Lam",
+      "email": "julian@designcreateplay.com",
+      "url": "https://github.com/julianlam"
+    },
+    {
+      "name": "Barış Soner Uşaklı",
+      "email": "baris@designcreateplay.com",
+      "url": "https://github.com/barisusakli"
+    }
+  ],
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/NodeBB/nodebb-theme-vanilla/issues"
+  },
+  "readme": "nodebb-theme-vanilla\r\n====================\r\n\r\nVanilla theme for NodeBB based on Bootstrap. Perfect for starting your own NodeBB themes!\r\n",
+  "readmeFilename": "README.md",
+  "_id": "nodebb-theme-vanilla@0.1.9",
+  "dist": {
+    "shasum": "3c4d55fe8c7cbbe3bb4099ad439f7ecb35b0f0b1"
+  },
+  "_from": "https://registry.npmjs.org/nodebb-theme-vanilla/-/nodebb-theme-vanilla-0.1.9.tgz",
+  "_resolved": "https://registry.npmjs.org/nodebb-theme-vanilla/-/nodebb-theme-vanilla-0.1.9.tgz"
+}
