@@ -1,8 +1,8 @@
 {
-    "id": "nodebb-theme-vanilla",
-    "name": "NodeBB Vanilla",
-    "description": "Vanilla Theme for NodeBB",
-    "url": "https://github.com/NodeBB/nodebb-theme-vanilla",
+    "id": "nodebb-theme-mooc",
+    "name": "NodeBB OpenMOOC",
+    "description": "OpenMOOC Theme for NodeBB",
+    "url": "https://github.com/GeographicaGS/nodebb-theme-openmooc",
     "screenshot": "screenshot.png",
     "moocng-url": "http://moocng.devopenmooc.com"
 }
