@@ -6,16 +6,13 @@
 <input type="hidden" template-variable="pageCount" value="{pageCount}" />
 
 <ol class="breadcrumb">
-	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<a href="{relative_path}/" itemprop="url"><span itemprop="title">[[global:home]]</span></a>
-	</li>
 	<!-- IF parent -->
 	<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
 		<a href="{relative_path}/category/{parent.slug}" itemprop="url"><span itemprop="title">{parent.name}</span></a>
 	</li>
 	<!-- ENDIF parent -->
 	<li class="active" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-		<span itemprop="title">{name} <!-- IF !feeds:disableRSS --><a target="_blank" href="{relative_path}/category/{cid}.rss"><i class="fa fa-rss-square"></i></a><!-- ENDIF !feeds:disableRSS --></span>
+		<span itemprop="title">{name} <!-- IF !feeds:disableRSS --><a target="_blank" href="{relative_path}/category/{cid}.rss"> <i class="fa fa-rss-square"></i></a><!-- ENDIF !feeds:disableRSS --></span>
 	</li>
 </ol>
 
@@ -33,14 +30,14 @@
 				<div class="header category-tools">
 					<span class="pull-right">
 						<!-- IF privileges.topics:create -->
-						<button id="new_post" class="btn btn-primary">[[category:new_topic_button]]</button>
+						<button id="new_post" class="btn squared">[[category:new_topic_button]]</button>
 						<!-- ENDIF privileges.topics:create -->
-						<button type="button" class="btn btn-default btn-success watch <!-- IF !isIgnored -->hidden<!-- ENDIF !isIgnored -->"><i class="fa fa-eye"></i> [[topic:watch]]</button>
-						<button type="button" class="btn btn-default btn-warning ignore <!-- IF isIgnored -->hidden<!-- ENDIF isIgnored -->"><i class="fa fa-eye-slash"></i> [[category:ignore]]</button>
+						<button type="button" class="btn watch <!-- IF !isIgnored -->hidden<!-- ENDIF !isIgnored -->"><i class="fa fa-eye"></i> [[topic:watch]]</button>
+						<button type="button" class="btn ignore <!-- IF isIgnored -->hidden<!-- ENDIF isIgnored -->"><i class="fa fa-eye-slash"></i> [[category:ignore]]</button>
 						<!-- IMPORT partials/category_tools.tpl -->
 
 						<div class="dropdown share-dropdown inline-block">
-							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+							<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
 								[[topic:share]] <span class="caret"></span>
 							</button>
 
@@ -105,7 +102,6 @@
 									{topics.teaser.user.username}
 									[[global:replied_ago, <span class="timeago" title="{topics.teaser.timestamp}"></span>]]
 								</h6>
-								<p class="text">{topics.teaser.content}</p>
 								<a href="{relative_path}/topic/{topics.slug}/{topics.teaser.index}">
 									
 								</a>
