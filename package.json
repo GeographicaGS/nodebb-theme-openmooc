@@ -1,46 +1,36 @@
 {
-  "name": "nodebb-theme-vanilla",
-  "version": "0.1.9",
-  "description": "Vanilla theme for NodeBB",
+  "name": "nodebb-theme-openmooc",
+  "version": "0.0.1",
+  "description": "OpenMOOC theme for NodeBB",
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NodeBB/nodebb-theme-vanilla"
+    "url": "https://github.com/GeographicaGS/nodebb-theme-openmooc"
   },
   "keywords": [
     "nodebb",
     "theme",
     "themes",
     "bootstrap",
-    "vanilla"
+    "openmooc"
   ],
   "contributors": [
     {
-      "name": "Andrew Rodrigues",
-      "email": "andrew@designcreateplay.com",
-      "url": "https://github.com/psychobunny"
-    },
-    {
-      "name": "Julian Lam",
-      "email": "julian@designcreateplay.com",
-      "url": "https://github.com/julianlam"
-    },
-    {
-      "name": "Barış Soner Uşaklı",
-      "email": "baris@designcreateplay.com",
-      "url": "https://github.com/barisusakli"
+      "name": "Raúl Yeguas",
+      "email": "raul.yeguas@geographica.gs",
+      "url": "https://github.com/neokore"
     }
   ],
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/NodeBB/nodebb-theme-vanilla/issues"
+    "url": "https://github.com/GeographicaGS/nodebb-theme-openmooc/issues"
   },
-  "readme": "nodebb-theme-vanilla\r\n====================\r\n\r\nVanilla theme for NodeBB based on Bootstrap. Perfect for starting your own NodeBB themes!\r\n",
+  "readme": "nodebb-theme-openmooc\r\n====================\r\n\r\nOpenMOOC theme for NodeBB based on Vanilla theme.\r\n",
   "readmeFilename": "README.md",
-  "_id": "nodebb-theme-vanilla@0.1.9",
+  "_id": "nodebb-theme-openmooc@0.0.1",
   "dist": {
     "shasum": "3c4d55fe8c7cbbe3bb4099ad439f7ecb35b0f0b1"
   },
-  "_from": "https://registry.npmjs.org/nodebb-theme-vanilla/-/nodebb-theme-vanilla-0.1.9.tgz",
-  "_resolved": "https://registry.npmjs.org/nodebb-theme-vanilla/-/nodebb-theme-vanilla-0.1.9.tgz"
+  "_from": "https://registry.npmjs.org/nodebb-theme-openmooc/-/nodebb-theme-openmooc-0.0.1.tgz",
+  "_resolved": "https://registry.npmjs.org/nodebb-theme-openmooc/-/nodebb-theme-openmooc-0.0.1.tgz"
 }

@@ -12,11 +12,11 @@
 					</a>
 				</h1>
 				
-				<div class="header-topic-title visible-xs">
+				<div class="header-topic-title hidden">
 					<span></span>
 				</div>
 
-				<ul id="meta-buttons" class="btn-link pull-left">
+				<ul id="meta-buttons" class="pull-left">
 					<li><a href="#" class="btn btn-link">Catalogue</a></li>
 		        	<li><a href="#" class="btn btn-link">Groups</a></li>
 		        	<li><a href="#" class="btn btn-link">About</a></li>
@@ -153,7 +153,7 @@
 						</li>
 					</ul>-->
 
-					<div class="header-topic-title hidden-xs">
+					<div class="header-topic-title hidden">
 						<span></span>
 					</div>
 				</div>

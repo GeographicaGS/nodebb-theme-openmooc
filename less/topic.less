@@ -62,7 +62,6 @@
 		padding: 0;
 
 		> li {
-			padding-bottom: 10px;
 
 			&.deleted {
 				-moz-opacity: 0.30;
@@ -89,6 +88,10 @@
 
 	.topic-main-buttons {
 		padding-bottom: 0px;
+
+		.btn-group .btn{
+			padding-top: 0;
+		}
 	}
 
 	@media (max-width: 767px) {
@@ -102,8 +105,7 @@
 		.post-info, .post-block {
 			position: relative;
 			border: 1px solid rgba(0, 0, 0, 0.06);
-			border-radius: 0 0 5px 5px;
-			padding: 10px;
+			padding: 14px;
 
 			.post-signature {
 				font-size: 12px;
@@ -124,17 +126,44 @@
 		}
 
 		.post-block {
-			border-radius: 5px;
-			margin-bottom: 15px;
+			border-radius: 0;
+			margin-bottom: 0;
+			border: solid @neutral_light_2;
+			border-width: 0 0 1px 0;
 
 			.topic-buttons {
-				background: rgba(0, 0, 0, 0.02);
-				border: 1px solid rgba(0, 0, 0, 0.06);
 				margin: -5px 0 0 0;
-				padding: 8px 0 0 23px;
+				padding: 8px 0 0 60px;
+
+				&:after {
+					content: "";
+					display: block;
+					clear: both;
+				}
+
+				.btn-group {
+					padding: 0 18px;
+					border-left: 1px solid @neutral_light_2;
+
+					&:first-child {
+						border-left: none;
+						padding-left: 0;
+					}
+				}
 
 				button.show {
 					display: inline-block !important;
+				}
+
+				object {
+					float: left;
+					padding: 10px 4px;
+				}
+
+				.votes {
+					font-weight: 600;
+					float: left;
+					padding: 12px 4px;
 				}
 
 				@media (max-width: 767px) {
@@ -143,9 +172,26 @@
 			}
 
 			.post-content {
-				padding: 10px 5px 0 5px;
+				padding: 0 5px;
 				word-wrap: break-word;
-				clear: left;
+				
+				&:after {
+					content: "";
+					display: block;
+					clear: both;
+				}
+
+				h4 {
+					margin-top: 0;
+					font-size: 14px;
+					color: @neutral_intense;
+					font-weight: 600;
+				}
+
+				p {
+					font-size: 16px;
+					color: @neutral_medium_1;
+				}
 
 				> ul, ol {
 					padding-bottom: 10px;
@@ -178,7 +224,7 @@
 
 	.posts {
 		.main-post {
-			display: none;
+			/*display: none;*/
 		}
 
 		.post-block {
@@ -187,15 +233,31 @@
 			}
 
 			.topic-buttons {
-				margin: -11px -10px 0px -10px;
+				/*margin: -11px -10px 0px -10px;*/
 				border: 0;
-				border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-				padding: 8px 9px 7px 23px;
+				padding: 8px 9px 7px 60px;
+
+				.no-hover {
+					display: none;
+				}
+
+				&:hover {
+					.no-hover {
+						display: inline-block;
+					}
+				}
 			}
 
 			.post-content {
-				margin-left: 10px;
+				margin-left: 60px;
 			}
+		}
+
+		.avatar {
+			width: 48px;
+			display: block;
+			float: left;
+			margin-right: 20px;
 		}
 
 		.img-thumbnail {
@@ -237,7 +299,7 @@
 			margin: 0 10px 0 0;
 			padding-bottom: 0px;
 			text-align: center;
-			width: 100px;
+			width: 48px;
 
 			@media (max-width: 767px) {
 				display: none;
@@ -262,10 +324,7 @@
 				margin:0px;
 			}
 			.topic-buttons {
-				background: rgba(0, 0, 0, 0.02);
-				border: 1px solid rgba(0, 0, 0, 0.06);
-				margin: 0 -11px 0 92px;
-				padding: 10px;
+				/*padding: 10px;*/
 				border-right: 0;
 
 				@media (max-width: 767px) {

@@ -25,15 +25,11 @@
 		<span class="hidden-xs-inline">[[topic:loading_more_posts]]</span> <i class="fa fa-refresh fa-spin"></i>
 	</div>
 	<!-- IF privileges.topics:reply -->
-	<button class="btn btn-primary post_reply" type="button">[[topic:reply]]</button>
+	<button class="btn squared post_reply" type="button">[[topic:reply]]</button>
 	<!-- ELSE -->
 		<!-- IF !loggedIn -->
-		<a href="/login?next=topic/{slug}" class="btn btn-primary">[[topic:reply]]</a>
+		<a href="/login?next=topic/{slug}">[[topic:reply]]</a>
 		<!-- ENDIF !loggedIn -->
 	<!-- ENDIF privileges.topics:reply -->
-
-	<!-- IMPORT partials/thread_sort.tpl -->
-
-	<!-- IMPORT partials/thread_tools.tpl -->
 </div>
 <div style="clear:both;"></div>
