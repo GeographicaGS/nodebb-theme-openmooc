@@ -1,6 +1,9 @@
 {
 	"id": "nodebb-theme-openmooc",
 	"library": "./lib/theme.js",
+	"staticDirs": {
+		"img": "static/img"
+	},
 	"hooks": [
 		{
 			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas", "callbacked": true
