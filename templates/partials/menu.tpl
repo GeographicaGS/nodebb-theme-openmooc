@@ -6,7 +6,7 @@
 				</button>
 				
 				<h1 class="logo">
-					<a href="{relative_path}/" class="hide-text">
+					<a href="<!-- IMPORT partials/hub_url.tpl -->" class="hide-text">
 						<img src="{brand:logo}" />
 						{title}
 					</a>
@@ -17,10 +17,7 @@
 				</div>
 
 				<ul id="meta-buttons" class="pull-left">
-					<li><a href="#" class="btn btn-link">Catalogue</a></li>
-		        	<li><a href="#" class="btn btn-link">Groups</a></li>
-		        	<li><a href="#" class="btn btn-link">About</a></li>
-		        	<li class="noLowRes"><a href="#" class="btn btn-link">How it works</a></li>
+					<!-- IMPORT partials/menu_links.tpl -->
 				</ul>
 
 				<div class="btn-toolbar pull-right">
