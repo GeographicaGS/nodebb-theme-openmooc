@@ -8,5 +8,6 @@
 		{
 			"hook": "filter:widgets.getAreas", "method": "defineWidgetAreas", "callbacked": true
 		}
-	]
+	],
+	"languages": "language"
 }
