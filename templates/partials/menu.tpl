@@ -62,7 +62,7 @@
 						<!-- END navigation -->
 						<li role="presentation" class="divider"></li>
 						<li id="logout-link">
-							<a href="#">[[global:logout]]</a>
+							<a href="<!-- IMPORT partials/hub_url.tpl -->/auth/logout">[[global:logout]]</a>
 						</li>
 						<li role="presentation" class="divider"></li>
 						<li>
@@ -88,16 +88,8 @@
 					</ul>
 					<!-- ELSE -->
 					<ul id="logged-out-menu" class="nav navbar-nav navbar-right pull-right">
-						<!-- IF allowRegistration -->
 						<li>
-							<a href="{relative_path}/register">
-								<i class="fa fa-pencil visible-xs-inline"></i>
-								<span>[[global:register]]</span>
-							</a>
-						</li>
-						<!-- ENDIF allowRegistration -->
-						<li>
-							<a href="{relative_path}/login">
+							<a href="<!-- IMPORT partials/hub_url.tpl -->/auth/login">
 								<i class="fa fa-sign-in visible-xs-inline"></i>
 								<span>[[global:login]]</span>
 							</a>
