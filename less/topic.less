@@ -101,7 +101,17 @@
 	}
 
 	.posts {
+		.post-row {
+			.post-block {
+				padding-left: 74px;
+			}
 
+			&:first-of-type {
+				.post-block {
+					padding-left: 14px;
+				}
+			}
+		}
 		.post-info, .post-block {
 			position: relative;
 			border: 1px solid rgba(0, 0, 0, 0.06);
@@ -151,8 +161,16 @@
 					}
 				}
 
-				button.show {
-					display: inline-block !important;
+				button{
+					color: @highlight;
+
+					&.show {
+						display: inline-block !important;
+					}
+
+					object {
+						padding: 0 8px;
+					}
 				}
 
 				object {
