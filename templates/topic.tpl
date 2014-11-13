@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		<!-- BEGIN posts -->
-			<li class="post-row<!-- IF posts.deleted --> deleted<!-- ENDIF posts.deleted -->" data-pid="{posts.pid}" data-uid="{posts.uid}" data-username="{posts.user.username}" data-userslug="{posts.user.userslug}" data-index="{posts.index}" data-timestamp="{posts.timestamp}" data-votes="{posts.votes}" itemscope itemtype="http://schema.org/Comment">
+			<li class="post-row<!-- IF posts.deleted --> deleted<!-- ENDIF posts.deleted -->" data-pid="{posts.pid}" data-uid="{posts.uid}" data-username="{posts.user.username}" data-userslug="{posts.user.userslug}" data-index="{posts.index}" data-timestamp="{posts.timestamp}" data-votes="{posts.votes}" data-replyto="{posts.toPid}" itemscope itemtype="http://schema.org/Comment">
 				<a id="post_anchor_{posts.index}" name="{posts.index}"></a>
 
 				<!--<meta itemprop="datePublished" content="{posts.relativeTime}">
@@ -60,7 +60,10 @@
 					<div class="topic-buttons">
 						<!-- IF privileges.topics:reply -->
 						<div class="btn-group">
-							<button class="btn squared post_reply" type="button"><i class="fa fa-reply"></i> [[topic:reply]]</button>
+							<button class="btn post_reply" type="button">
+								<object type="image/svg+xml" data="/images/themes/ECO_icon_responder.svg"></object>
+								[[topic:reply]]
+							</button>
 						</div>
 						<!-- ENDIF privileges.topics:reply -->
 
@@ -76,7 +79,7 @@
 							<!-- ENDIF posts.downvoted -->
 							<!-- ENDIF posts.upvoted -->
 							<span class="votes" data-votes="{posts.votes}">{posts.votes}</span>
-							<button class="upvote btn btn-sm no-hover">
+							<button class="upvote btn no-hover">
 								<i class="fa fa-chevron-up"></i>
 							</button>
 							<!-- IF !downvote:disabled -->
@@ -89,19 +92,28 @@
 
 						<div class="btn-group no-hover">
 							<!-- IF !posts.selfPost -->
-							<button class="btn chat"><i class="fa fa-comment"></i> Chat</button>
+							<button class="btn chat">
+								<object type="image/svg+xml" data="/images/themes/ECO_icon_chat.svg"></object>
+								Chat
+							</button>
 							<!-- ENDIF !posts.selfPost -->
 						</div>
 
 						<!-- IF privileges.topics:reply -->
 						<div class="btn-group no-hover">
-							<button class="btn quote" type="button"><i class="fa fa-quote-left"></i> [[topic:quote]] </button>
+							<button class="btn quote" type="button">
+								<object type="image/svg+xml" data="/images/themes/ECO_icon_citar.svg"></object>
+								[[topic:quote]]
+							</button>
 						</div>
 						<!-- ENDIF privileges.topics:reply -->
 
 						<!-- IF !posts.selfPost -->
 						<div class="btn-group no-hover">
-							<button class="btn flag" type="button" title="[[topic:flag_title]]"><i class="fa fa-flag-o"></i></button>
+							<button class="btn flag" type="button" title="[[topic:flag_title]]">
+								<object type="image/svg+xml" data="/images/themes/ECO_icon_moderar.svg"></object>
+								[[topic:flag]]
+							</button>
 						</div>
 						<!-- ENDIF !posts.selfPost -->
 
