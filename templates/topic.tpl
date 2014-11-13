@@ -61,7 +61,7 @@
 						<!-- IF privileges.topics:reply -->
 						<div class="btn-group">
 							<button class="btn post_reply" type="button">
-								<object type="image/svg+xml" data="/images/themes/ECO_icon_responder.svg"></object>
+								<object type="image/svg+xml" data="/plugins/nodebb-theme-openmooc/img/ECO_icon_responder.svg"></object>
 								[[topic:reply]]
 							</button>
 						</div>
@@ -70,10 +70,10 @@
 						<!-- IF !reputation:disabled -->
 						<div class="btn-group">
 							<!-- IF posts.upvoted -->
-							<object type="image/svg+xml" data="/images/themes/ECO_icon_karma_up.svg"></object>
+							<object type="image/svg+xml" data="/plugins/nodebb-theme-openmooc/img/ECO_icon_karma_up.svg"></object>
 							<!-- ELSE -->
 							<!-- IF posts.downvoted -->
-							<object type="image/svg+xml" data="/images/themes/ECO_icon_karma_down.svg"></object>
+							<object type="image/svg+xml" data="/plugins/nodebb-theme-openmooc/img/ECO_icon_karma_down.svg"></object>
 							<!-- ELSE -->
 							<object type="image/svg+xml" data="/images/themes/ECO_icon_karma.svg"></object>
 							<!-- ENDIF posts.downvoted -->
@@ -93,7 +93,7 @@
 						<div class="btn-group no-hover">
 							<!-- IF !posts.selfPost -->
 							<button class="btn chat">
-								<object type="image/svg+xml" data="/images/themes/ECO_icon_chat.svg"></object>
+								<object type="image/svg+xml" data="/plugins/nodebb-theme-openmooc/img/ECO_icon_chat.svg"></object>
 								Chat
 							</button>
 							<!-- ENDIF !posts.selfPost -->
@@ -102,7 +102,7 @@
 						<!-- IF privileges.topics:reply -->
 						<div class="btn-group no-hover">
 							<button class="btn quote" type="button">
-								<object type="image/svg+xml" data="/images/themes/ECO_icon_citar.svg"></object>
+								<object type="image/svg+xml" data="/plugins/nodebb-theme-openmooc/img/ECO_icon_citar.svg"></object>
 								[[topic:quote]]
 							</button>
 						</div>
@@ -111,7 +111,7 @@
 						<!-- IF !posts.selfPost -->
 						<div class="btn-group no-hover">
 							<button class="btn flag" type="button" title="[[topic:flag_title]]">
-								<object type="image/svg+xml" data="/images/themes/ECO_icon_moderar.svg"></object>
+								<object type="image/svg+xml" data="/plugins/nodebb-theme-openmooc/img/ECO_icon_moderar.svg"></object>
 								[[topic:flag]]
 							</button>
 						</div>
