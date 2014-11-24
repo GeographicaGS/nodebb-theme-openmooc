@@ -39,7 +39,7 @@
 						</div>
 						<!-- BEGIN posts -->
 						<div class="preview col-lg-4 col-md-4 col-sm-8 col-mob-4">
-							<h5>Último mensaje</h5>
+							<h5>[[nodebb-theme-openmooc:Last message]]</h5>
 							<div id="category-{categories.cid}" class="category-slider-{categories.post_count}">
 								<div class="post">
 									<h6>{categories.posts.user.username} <span>[{categories.posts.relativeTime}]</span></h6>
@@ -51,7 +51,7 @@
 							<!-- ELSE -->
 							<a href="{relative_path}/category/{categories.slug}" itemprop="url" class="go">
 							<!-- ENDIF categories.link -->
-								Seguir leyendo
+								[[nodebb-theme-openmooc:Read more]]
 								<svg viewBox="0 0 30 24" xml:space="preserve">
 									<polygon points="16,2 25.113,11 1,11 1,13 25.137,13 16,22 17.414,23.414 29,12 17.414,0.586 		"/>
 								</svg>
