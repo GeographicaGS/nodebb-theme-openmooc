@@ -97,7 +97,7 @@
 								<!-- IF topics.unreplied -->
 								<h5>[[category:no_replies]]</h5>
 								<!-- ELSE -->
-								<h5>Último mensaje</h5>
+								<h5>[[nodebb-theme-openmooc:Last message]]</h5>
 								<h6>
 									{topics.teaser.user.username}
 									[[global:replied_ago, <span class="timeago" title="{topics.teaser.timestamp}"></span>]]
