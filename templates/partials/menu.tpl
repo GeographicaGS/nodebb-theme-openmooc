@@ -12,9 +12,9 @@
 					</a>
 				</h1>
 				
-				<div class="header-topic-title hidden">
+				<!--<div class="header-topic-title hidden">
 					<span></span>
-				</div>
+				</div>-->
 
 				<ul id="meta-buttons" class="pull-left">
 					<!-- IMPORT partials/menu_links.tpl -->
@@ -64,7 +64,7 @@
 						<li id="logout-link">
 							<a href="<!-- IMPORT partials/hub_url.tpl -->/auth/logout">[[global:logout]]</a>
 						</li>
-						<li role="presentation" class="divider"></li>
+						<!--<li role="presentation" class="divider"></li>
 						<li>
 							<a href="#" class="user-status" data-status="online">
 								<i class="fa fa-circle status online"></i><span> [[global:online]]</span>
@@ -84,7 +84,7 @@
 							<a href="#" class="user-status" data-status="offline">
 								<i class="fa fa-circle status offline"></i><span> [[global:invisible]]</span>
 							</a>
-						</li>
+						</li>-->
 					</ul>
 					<!-- ELSE -->
 					<ul id="logged-out-menu" class="nav navbar-nav navbar-right pull-right">
@@ -142,8 +142,8 @@
 						</li>
 					</ul>-->
 
-					<div class="header-topic-title hidden">
+					<!--<div class="header-topic-title hidden">
 						<span></span>
-					</div>
+					</div>-->
 				</div>
 			</div>
