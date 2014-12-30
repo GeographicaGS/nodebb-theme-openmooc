@@ -28,7 +28,7 @@
 					</a>
 					<ul id="user-control-list" class="dropdown-menu" aria-labelledby="user_dropdown">
 						<li>
-							<a id="user-profile-link" href="{relative_path}/user/{user.userslug}">
+							<a id="user-profile-link" href="<!-- IMPORT partials/hub_url.tpl -->/user/profile">
 								<i class="fa fa-circle status {user.status}"></i> <span id="user-header-name">{user.username}</span>
 							</a>
 						</li>

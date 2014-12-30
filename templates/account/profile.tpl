@@ -10,7 +10,7 @@
 			<div class="account-picture-block panel panel-default">
 				<div class="panel-body">
 					<div class="text-center">
-						<a href="{relative_path}/user/{userslug}"><img src="{picture}" class="user-profile-picture img-thumbnail"/></a>
+						<a href="<!-- IMPORT partials/hub_url.tpl -->/user/profile/{username}"><img src="{picture}" class="user-profile-picture img-thumbnail"/></a>
 					</div>
 
 					<div>

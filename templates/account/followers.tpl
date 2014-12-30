@@ -5,10 +5,10 @@
 	<div>
 		<!-- BEGIN followers -->
 		<div class="users-box">
-			<a href="{relative_path}/user/{followers.userslug}"><img src="{followers.picture}" class="img-thumbnail"/></a>
+			<a href="<!-- IMPORT partials/hub_url.tpl -->/user/profile/{followers.username}"><img src="{followers.picture}" class="img-thumbnail"/></a>
 			<br/>
 			<div class="user-info">
-				<a href="{relative_path}/user/{followers.userslug}">{followers.username}</a>
+				<a href="<!-- IMPORT partials/hub_url.tpl -->/user/profile/{followers.username}">{followers.username}</a>
 				<br/>
 				<div title="reputation" class="reputation">
 					<i class='fa fa-star'></i>

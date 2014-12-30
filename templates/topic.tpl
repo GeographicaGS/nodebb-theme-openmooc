@@ -42,7 +42,7 @@
 
 				<div class="panel panel-default post-block topic-item">
 
-					<a class="main-post avatar" href="<!-- IF posts.user.userslug -->{relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
+					<a class="main-post avatar" href="<!-- IMPORT partials/hub_url.tpl -->/user/profile/{posts.user.username}">
 						<img itemprop="image" src="{posts.user.picture}" align="left" class="img-thumbnail" />
 						<!-- IF posts.user.banned -->
 						<span class="label label-danger">[[topic:banned]]</span>

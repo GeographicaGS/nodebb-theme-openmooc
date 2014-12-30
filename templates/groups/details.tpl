@@ -42,11 +42,11 @@
 
 				<!-- BEGIN posts -->
 				<!-- IF !@first --><hr class="clear" /><!-- ENDIF !@first -->
-				<a href="{relative_path}/user/{posts.user.userslug}">
+				<a href="<!-- IMPORT partials/hub_url.tpl -->/user/profile/{post.user.username}">
 					<img title="{posts.user.username}" class="img-rounded user-img" src="{posts.user.picture}">
 				</a>
 
-				<a href="{relative_path}/user/{posts.user.userslug}">
+				<a href="<!-- IMPORT partials/hub_url.tpl -->/user/profile/{post.user.username}">
 					<strong><span>{posts.user.username}</span></strong>
 				</a>
 				<p>{posts.content}</p>

@@ -10,7 +10,7 @@
 				<ul class="members">
 					<!-- BEGIN members -->
 					<li>
-						<a href="{relative_path}/user/{groups.members.userslug}">
+						<a href="<!-- IMPORT partials/hub_url.tpl -->/user/profile/{groups.members.username}">
 							<img src="{groups.members.picture}" title="{groups.members.userslug}" />
 						</a>
 					</li>

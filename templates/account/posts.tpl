@@ -12,11 +12,11 @@
 			<!-- BEGIN posts -->
 			<div class="topic-row panel panel-default clearfix">
 				<div class="panel-body">
-					<a href="{relative_path}/user/{posts.user.userslug}">
+					<a href="<!-- IMPORT partials/hub_url.tpl -->/user/profile/{post.user.username}">
 						<img title="{posts.user.username}" class="img-rounded user-img" src="{posts.user.picture}">
 					</a>
 
-					<a href="{relative_path}/user/{posts.user.userslug}">
+					<a href="<!-- IMPORT partials/hub_url.tpl -->/user/profile/{post.user.username}">
 						<strong><span>{posts.user.username}</span></strong>
 					</a>
 					<div class="content">

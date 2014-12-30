@@ -14,10 +14,10 @@
 		<span>[[global:posts]]</span>
 		<strong><span class="topic-post-count" class="human-readable-number" title="{postcount}">{postcount}</span></strong> |
 		<span>[[global:views]]</span>
-		<strong><span class="human-readable-number" title="{viewcount}">{viewcount}</span></strong> |
-		<span>[[category:browsing]]</span>
+		<strong><span class="human-readable-number" title="{viewcount}">{viewcount}</span></strong>
+		<!--  | <span>[[category:browsing]]</span> -->
 	</small>
-	<div class="thread_active_users active-users inline-block"></div>
+	<!-- <div class="thread_active_users active-users inline-block"></div> -->
 </div>
 
 <div class="topic-main-buttons pull-right inline-block">

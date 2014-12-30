@@ -21,12 +21,12 @@
 	<ul id="users-container" class="users-container">
 		<!-- BEGIN users -->
 		<li class="users-box registered-user" data-uid="{users.uid}">
-			<a href="{relative_path}/user/{users.userslug}"><img src="{users.picture}" class="img-thumbnail"/></a>
+			<a href="<!-- IMPORT partials/hub_url.tpl -->/user/profile/{users.username}"><img src="{users.picture}" class="img-thumbnail"/></a>
 			<br/>
 			<div class="user-info">
 				<span>
 					<i class="fa fa-circle status {users.status}" title="[[global:{users.status}]]"></i>
-					<a href="{relative_path}/user/{users.userslug}">{users.username}</a>
+					<a href="<!-- IMPORT partials/hub_url.tpl -->/user/profile/{users.username}">{users.username}</a>
 				</span>
 				<br/>
 				<div title="reputation" class="reputation">
