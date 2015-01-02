@@ -50,7 +50,7 @@
 					</a>
 
 					<div id="content_{posts.pid}" class="post-content" itemprop="text">
-						<h4>{posts.user.username}</h4>
+						<h4>{posts.user.username} <span class="timeago" title="{posts.relativeTime}"></span></h4>
 						{posts.content}
 					</div>
 					<!-- IF posts.user.signature -->

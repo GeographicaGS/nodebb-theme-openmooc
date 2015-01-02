@@ -42,7 +42,8 @@
 							<h5>[[nodebb-theme-openmooc:Last message]]</h5>
 							<div id="category-{categories.cid}" class="category-slider-{categories.post_count}">
 								<div class="post">
-									<h6>{categories.posts.user.username} <span>[{categories.posts.relativeTime}]</span></h6>
+									<h6>{categories.posts.user.username}
+									<span class="timeago" title="{categories.posts.relativeTime}" datetime="{categories.posts.relativeTime}"></span></h6>
 									<p class="text">{categories.posts.content}</p>
 								</div>
 							</div>
