@@ -47,6 +47,5 @@
 	<header role="navigation" id="header-menu">
 			<!-- IMPORT partials/menu.tpl -->
 	</header>
-
 	<div class="container" id="content">
 	<!-- IMPORT partials/noscript/warning.tpl -->

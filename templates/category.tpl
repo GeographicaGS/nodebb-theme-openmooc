@@ -1,4 +1,113 @@
-
+<div class="course-toolbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-8 col-sm-5 col-mob-4">
+                <h1>{parent.name}</h1>
+                <h3 class="noLowRes">Hashtag: <a href="{% url profile_posts_hashtag course.hashtag %}" id="hashtag">#{{ course.hashtag }}</a></h3>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-3 col-mob-4 alt-column top">
+            </div>
+        </div>
+        <div class="row bottom-row">
+            <div class="col-lg-12 col-md-8 col-sm-5 col-mob-4">
+                <ul class="menu">
+                    <li>
+                        <a href="<!-- IMPORT partials/hub_url.tpl -->/course/{category.slug}/dashboard">
+                            <img src="/plugins/nodebb-theme-openmooc/img/ECO_icon_dashboard.svg" alt="Dashboard">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<!-- IMPORT partials/hub_url.tpl -->/course/{category.slug}/syllabus">
+                            Syllabus
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<!-- IMPORT partials/hub_url.tpl -->/course/{category.slug}/reviews">
+                            Reviews
+                        </a>
+                    </li>
+                    <li class="noLowRes">
+                        <a href="<!-- IMPORT partials/hub_url.tpl -->/course/{category.slug}/calendar">
+                            Calendar
+                        </a>
+                    </li>
+                    <li class="noLowRes">
+                        <a href="<!-- IMPORT partials/hub_url.tpl -->/course/{category.slug}/wiki">
+                            Wiki
+                        </a>
+                    </li>
+                    <li class="noLowRes">
+                        <a href="<!-- IMPORT partials/hub_url.tpl -->/course/{category.slug}/group">
+                            Group
+                        </a>
+                    </li>
+                    <li class="noLowRes">
+                        <a href="{relative_path}/category/{parent.slug}" class="selected">
+                            Forum
+                        </a>
+                    </li>
+                    <li class="noLowRes">
+                        <a href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="btn-group">
+                        <a href="#" class="dropdown-btn">
+                            More
+                            <svg height="10px" width="14px">
+                                <path fill="#FFFFFF" d="M0.586,2.414L2,1l5,5.172L12,1l1.414,1.414L7,9L0.586,2.414z"/>
+                            </svg>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="onlyLowRes">
+                                <a href="<!-- IMPORT partials/hub_url.tpl -->/course/{category.slug}/calendar">
+                                    Calendar
+                                </a>
+                            </li>
+                            <li class="onlyLowRes">
+                                <a href="<!-- IMPORT partials/hub_url.tpl -->/course/{category.slug}/wiki">
+                                    Wiki
+                                </a>
+                            </li>
+                            <li class="onlyLowRes">
+                                <a href="<!-- IMPORT partials/hub_url.tpl -->/course/{category.slug}/group">
+                                    Group
+                                </a>
+                            </li>
+                            <li class="onlyLowRes">
+                                <a href="{relative_path}/category/{parent.slug}" class="selected">
+                                    Forum
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<!-- IMPORT partials/hub_url.tpl -->/course/{category.slug}/teachers">
+                                    Teachers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<!-- IMPORT partials/hub_url.tpl -->/course/{category.slug}/overview">
+                                    General information
+                                </a>
+                            </li>
+                            <li>
+                                <!-- if is_teacher -->
+                                <a href="<!-- IMPORT partials/hub_url.tpl -->/course/{category.slug}/teacheradmin">
+                                    Admin course
+                                </a>
+                                <!-- endif -->
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-3 col-mob-4 alt-column bottom">
+                <div class="progress-bar">
+                    <a href="<!-- IMPORT partials/hub_url.tpl -->/course/{category.slug}/progress"><img src="/plugins/nodebb-theme-openmooc/img/ECO_icon_info_progreso.svg" alt="Mi progreso"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <input type="hidden" template-variable="category_id" value="{cid}" />
 <input type="hidden" template-variable="category_name" value="{name}" />
 <input type="hidden" template-variable="topic_count" value="{topic_count}" />

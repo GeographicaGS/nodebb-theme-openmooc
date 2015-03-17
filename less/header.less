@@ -121,3 +121,277 @@ header {
 		}
 	}
 }
+
+.course-toolbar {
+    background-color: @highlight;
+    color: @white;
+    width: 100%;
+
+    .row {
+
+        &:first-child {
+            overflow: hidden;
+            max-height: 72px;
+            transition: max-height .2s ease;
+        }
+
+        &:last-child > div {
+            height: 72px;
+            position: relative;
+
+            transition: padding .2s ease, height .2s ease;
+        }
+    }
+
+    .alt-column {
+        padding: 11px 20px;
+        background-color: rgba(255,255,255,.1);
+
+        &.top {
+            padding: 13px 20px;
+        }
+
+        &.bottom {
+            padding: 20px 20px 28px 20px;
+        }
+    }
+
+    h1 {
+        color: @comp;
+        font-size: 22px;
+        font-weight: 300;
+        padding-top: 20px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    h3 {
+        color: @neutral_light_2;
+        font-size: 12px;
+        text-transform: uppercase;
+
+        #hashtag {
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: none;
+            color: @white;
+        }
+    }
+
+    .cert_button {
+        height: 48px;
+        width: 48px;
+        background-color: @comp;
+        border-radius: 24px;
+        svg {
+            margin-top: 3px;
+            width: 39px;
+            height: 40px;
+            fill: @highlight;
+        }
+    }
+
+    .menu {
+        position: absolute;
+        bottom: 0;
+
+        li {
+            margin: 0;
+            float: left;
+            font-size: 16px;
+
+            &.btn-group {
+                .dropdown-btn {
+                    transition: background .1s ease-in-out, color .1s ease-in-out;
+
+                    path {
+                        transition: fill .1s ease-in-out;
+                    }
+                }
+                .dropdown-menu {
+                    color: @highlight;
+                    top: 46px;
+                    left: 0;
+                    right: auto;
+                    padding: 0;
+                    box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+                    border-top: 1px solid @neutral_light_1;
+
+                    li {
+                        display: block;
+                        width: 100%;
+                        border-bottom: 1px solid @neutral_light_1;
+
+                        &:last-child {
+                            border: none;
+                        }
+                    }
+                }
+
+                &:hover .dropdown-btn {
+                    border-bottom-color: transparent;
+                    background-color: @neutral_light_3;
+                    color: @highlight;
+
+                    path {
+                        fill: @highlight;
+                    }
+                }
+            }
+
+            a {
+                padding: 10px 13px;
+                border-bottom: 4px solid transparent;
+                display: block;
+                transition: border-color .1s ease;
+
+                img {
+                    vertical-align: bottom;
+                }
+
+                &:hover {
+                    border-bottom-color: fade(@comp,50%);
+                }
+
+                &.selected {
+                    border-bottom-color: @comp;
+                }
+            }
+        }
+    }
+
+    .progress-fraction {
+        display: inline-block;
+        margin-right: 10%;
+
+        img {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 6px;
+            position: relative;
+            top: -2px;
+        }
+
+        p {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 700;
+            span {
+                font-weight: 400;
+            }
+        }
+
+        h4 {
+            color: @neutral_light_2;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+    }
+
+    .progress-bar {
+        display: table;
+        width: 100%;
+
+        h4 {
+            color: @neutral_light_2;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 400;
+            float: left;
+        }
+
+        p {
+            font-size: 16px;
+            float: right;
+
+            &:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+
+        & > div {
+            display: table-cell;
+        }
+
+        a {
+            display: table-cell;
+            padding-left: 20px;
+        }
+    }
+}
+
+&.course {
+    padding-top: 228px;
+
+    &.collapsed {
+        padding-top: 134px;
+
+        header {
+            .main-bar {
+                max-height: 67px;
+
+                .logo {
+                    opacity: 0;
+                    top: -30px;
+                }
+
+                .logo-mini {
+                    opacity: 1;
+                    top: 0;
+                }
+
+                #meta-buttons {
+                    opacity: 0;
+                    top: -30px;
+                }
+
+                .course-title {
+                    opacity: 1;
+                    top: 0;
+                }
+
+                .btn-toolbar {
+                    padding: 0;
+                }
+            }
+            .course-toolbar {
+                .row:first-child {
+                    //display: none;
+                    max-height: 0;
+                }
+
+                .bottom-row > div {
+                    height: 48px;
+
+                    &:last-child {
+                        padding-top: 11px;
+                    }
+                }
+
+                .progress-bar {
+                    h4 {
+                        display: none;
+                    }
+
+                    p {
+                        display: none;
+                    }
+
+                    & > div {
+                        .img_v_middle;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.breadcrumb {
+    display: none;
+}
